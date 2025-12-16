@@ -1,0 +1,28 @@
+.paragraph{
+  box-shadow: 4px 3px 8px 0px #10823e
+}
+
+.card {
+  border-width: 10px; 
+  border-style: solid;
+  border-color: black;
+
+  padding: 10px;
+  width: 100%;
+}
+
+.gioi-thieu_title{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.site-main{
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border: 10px solid red;
+
+  /* gap: 50px */
+}
