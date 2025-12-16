@@ -1,0 +1,144 @@
+/* ==========
+  Reset nhẹ
+========== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ==========
+  Layout chính
+========== */
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.site-header {
+  background-color: #111827;
+  color: #f9fafb;
+  padding: 16px 0;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.main-nav {
+  margin-top: 8px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.15s ease;
+}
+
+.main-nav a:hover {
+  background-color: #374151;
+}
+
+.site-main {
+  padding: 24px 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.site-footer {
+  background-color: #111827;
+  color: #9ca3af;
+  padding: 16px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* ==========
+  Card & nội dung
+========== */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  margin-top: 4px;
+}
+
+.card ol {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.card ul {
+  margin-left: 18px;
+  margin-top: 4px;
+}
+
+code {
+  font-family: "JetBrains Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+  background-color: #e5e7eb;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-size: 90%;
+}
+
+/* ==========
+  Box Model Demo
+========== */
+.box-demo {
+  margin-top: 12px;
+}
+
+.demo-box {
+  /* Thử chỉnh các giá trị này để hiểu Box Model */
+  margin: 16px 0; /* khoảng cách bên ngoài khối */
+  padding: 16px; /* khoảng cách bên trong khối, giữa border và nội dung */
+  border: 2px solid #3b82f6; /* đường viền khối */
+
+  background-color: #dbeafe;
+  color: #1d4ed8;
+  border-radius: 6px;
+}
+
+/* Responsive đơn giản cho màn hình nhỏ */
+@media (max-width: 640px) {
+  .site-main {
+    padding-top: 16px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+}
+
+
