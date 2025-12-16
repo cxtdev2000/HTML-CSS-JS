@@ -1,0 +1,114 @@
+﻿FRONTEND FROM ZERO TO HERO
+Thời gian: ~20 Tuần (khoảng 5 Tháng)
+Lịch học: 3 Buổi/tuần (2-3 giờ/buổi)
+Tech Stack: HTML/CSS/JS, ReactJS, Next.js, Tailwind/AntD/MUI, Git, Vercel.
+________________
+GIAI ĐOẠN 1: NỀN TẢNG CỐT LÕI & CÔNG CỤ QUẢN LÝ (TUẦN 1 - 4)
+Tuần 1: HTML5 & CSS3 Layout
+* Buổi 1: Cấu trúc HTML (Semantic tags), SEO cơ bản. CSS Box Model (Margin, Padding, Border).
+* Buổi 2: Flexbox chuyên sâu (Main/Cross axis, Alignment).
+* Buổi 3: CSS Grid & Responsive Design (Media Queries, Breakpoints).
+* Thực hành: Clone giao diện trang chủ Google hoặc một Landing page đơn giản (chỉ HTML/CSS).
+Tuần 2: JavaScript Basic (ES5)
+* Buổi 1: Biến, Kiểu dữ liệu, Toán tử, Câu lệnh điều kiện (If/Else, Switch).
+* Buổi 2: Vòng lặp (For, While), Hàm (Function declaration vs Expression).
+* Buổi 3: Mảng (Array) và các phương thức xử lý chuỗi (String methods).
+* Thực hành: Giải 10 bài tập thuật toán cơ bản trên CodeWar/LeetCode (Easy).
+Tuần 3: JavaScript DOM & Events
+* Buổi 1: DOM Manipulation (document.querySelector, create/append elements).
+* Buổi 2: Events (Click, Submit, Input, Scroll) & Event Bubbling.
+* Buổi 3: LocalStorage & SessionStorage (Lưu dữ liệu trình duyệt).
+* Thực hành: Xây dựng ứng dụng "To-Do List" thuần JS (Thêm/Sửa/Xóa task).
+Tuần 4: Git, GitHub & Package Managers
+* Buổi 1: Git flow cơ bản (init, add, commit, push, pull, clone). Tạo repo trên GitHub.
+* Buổi 2: Branching & Merge (Xử lý xung đột code cơ bản).
+* Buổi 3: Node.js Environment. Phân biệt npm, yarn, pnpm. Khởi tạo package.json.
+* Thực hành: Đẩy toàn bộ bài tập các tuần trước lên GitHub. Cài đặt thử thư viện lodash và sử dụng.
+________________
+GIAI ĐOẠN 2: UI LIBRARIES & JAVASCRIPT NÂNG CAO (TUẦN 5 - 8)
+Tuần 5: JavaScript ES6+ (Quan trọng cho React)
+* Buổi 1: Arrow Function, Template Literals, Destructuring (Object/Array).
+* Buổi 2: Spread/Rest Operator, Modules (Import/Export).
+* Buổi 3: Array Methods nâng cao: .map(), .filter(), .reduce(), .find().
+* Thực hành: Refactor (viết lại) code To-Do List tuần 3 sang cú pháp ES6.
+Tuần 6: CSS Framework - TailwindCSS
+* Buổi 1: Cài đặt Tailwind qua npm. Tư duy "Utility-first". Cấu hình tailwind.config.js.
+* Buổi 2: Layout với Tailwind (Flex, Grid, Spacing). States (Hover, Focus).
+* Buổi 3: Responsive & Dark Mode với Tailwind.
+* Thực hành: Code giao diện trang Login và Dashboard tĩnh bằng Tailwind.
+Tuần 7: Component Libraries (Ant Design & Material UI)
+* Buổi 1: Ant Design: Grid system, Table, Form, DatePicker (Dùng cho Admin/Data).
+* Buổi 2: Material UI (MUI): Typography, Box, SX props, Icons.
+* Buổi 3: Custom Theme cơ bản cho AntD/MUI.
+* Thực hành: Tạo bảng danh sách nhân viên (Table) có phân trang bằng Ant Design.
+Tuần 8: Asynchronous JS & API
+* Buổi 1: Callback, Promise, Async/Await.
+* Buổi 2: Fetch API & Postman (Cách test API).
+* Buổi 3: Xử lý lỗi (Try/Catch).
+* Thực hành: Gọi API miễn phí (VD: JSONPlaceholder) lấy danh sách user và hiển thị lên giao diện tuần 7.
+________________
+GIAI ĐOẠN 3: REACTJS ECOSYSTEM (TUẦN 9 - 13)
+Tuần 9: React Core - Components & Props
+* Buổi 1: Create React App (hoặc Vite). JSX Syntax. Functional Components.
+* Buổi 2: Props & Props Drilling. Rendering Lists (map).
+* Buổi 3: Conditional Rendering (Toán tử 3 ngôi, &&).
+* Thực hành: Chia nhỏ giao diện trang Dashboard cũ thành các Components.
+Tuần 10: State Management & Hooks cơ bản
+* Buổi 1: useState: Quản lý trạng thái nội bộ.
+* Buổi 2: Handling Events trong React. Two-way binding.
+* Buổi 3: Thực hành Form cơ bản.
+* Thực hành: Ứng dụng Calculator hoặc Counter.
+Tuần 11: Side Effects & Lifecycle
+* Buổi 1: useEffect: Dependencies array, Cleanup function.
+* Buổi 2: Gọi API trong useEffect (Axios/Fetch). Loading skeleton.
+* Buổi 3: Lifecycle: Mount, Update, Unmount.
+* Thực hành: App "Music Player" (Play/Pause, Seek, Next song).
+Tuần 12: Routing & Global State
+* Buổi 1: React Router DOM (v6): Routes, Route, Link, NavLink.
+* Buổi 2: Dynamic Route (Params) & useNavigate.
+* Buổi 3: useContext & createContext (Quản lý Theme Sáng/Tối).
+* Thực hành: Gắn Router cho các trang Dashboard, Login, Music Player.
+Tuần 13: Mini Project 1 (React)
+* Chủ đề: App quản lý chi tiêu cá nhân.
+* Yêu cầu: React + Tailwind + LocalStorage. CRUD (Thêm, Sửa, Xóa giao dịch).
+* Thực hành: Code full 3 buổi, đẩy lên GitHub.
+________________
+GIAI ĐOẠN 4: NEXT.JS & MODERN TECH (TUẦN 14 - 17)
+Tuần 14: Next.js Fundamentals (App Router)
+* Buổi 1: Setup Next.js. Cấu trúc thư mục App Router. SSR vs CSR.
+* Buổi 2: File-based Routing, Dynamic Segments ([slug]).
+* Buổi 3: Layouts (layout.js), Templates, Pages (page.js).
+* Thực hành: Chuyển đổi project React cũ sang Next.js structure.
+Tuần 15: Data Fetching & Backend Integration
+* Buổi 1: Server Components vs Client Components ("use client").
+* Buổi 2: Fetching Data on Server (async/await in component).
+* Buổi 3: Next.js API Routes (Viết API backend đơn giản ngay trong Next).
+* Thực hành: Viết API lấy danh sách sản phẩm và hiển thị ra trang chủ.
+Tuần 16: Optimization & SEO
+* Buổi 1: Image Component (next/image), Font Optimization (next/font).
+* Buổi 2: Metadata API (Title, Description, OpenGraph).
+* Buổi 3: Lazy Loading & Suspense.
+* Thực hành: Tối ưu Lighthouse Score cho project.
+Tuần 17: Deployment (Vercel)
+* Buổi 1: Quy trình CI/CD cơ bản với Vercel & GitHub.
+* Buổi 2: Environment Variables (.env).
+* Buổi 3: Custom Domain & Production Check.
+* Thực hành: Deploy Project Next.js lên Vercel, kiểm tra live URL.
+________________
+GIAI ĐOẠN 5: CAPSTONE PROJECT & PORTFOLIO (TUẦN 18 - 20)
+Tuần 18: Khởi tạo Capstone Project (Portfolio)
+* Chủ đề: E-commerce Website (Bán hàng) hoặc Movie Booking.
+* Tech Stack: Next.js, TailwindCSS (Client), Ant Design (Admin Dashboard), API tự viết hoặc dùng MockAPI.
+* Tiến độ: Setup cấu trúc, Database giả, Layout chung.
+Tuần 19: Phát triển tính năng (Sprint)
+* Buổi 1: Trang danh sách sản phẩm (Filter, Sort, Search).
+* Buổi 2: Trang chi tiết (Detail), Giỏ hàng (State management).
+* Buổi 3: Trang Admin (Quản lý sản phẩm với Table AntD).
+Tuần 20: Hoàn thiện & Đóng gói
+* Buổi 1: Polish UI/UX, Responsive Mobile, Fix bugs.
+* Buổi 2: Viết README.md chuyên nghiệp (Demo GIF, Tech stack, Install guide).
+* Buổi 3: Deploy Final Product. Tổng hợp CV, Link GitHub, Link Demo.
+________________
+Lưu ý:
+1. Tự học: Ngoài 3 buổi chính, Mạnh cần dành ít nhất 10 tiếng/tuần để tự code.
+2. Tài liệu tham khảo: React Docs (Beta), Next.js Docs, Web3school (https://www.w3schools.com/)
