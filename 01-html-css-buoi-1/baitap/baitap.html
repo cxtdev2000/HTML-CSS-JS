@@ -1,65 +1,127 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content />
-        <title>Bài tập về nhà</title>
-        <link rel="stylesheet" href="./baitapcss.css" />
-    </head>
 
-    <body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content />
+    <title>Bài tập về nhà</title>
+    <link rel="stylesheet" href="./baitapcss.css" />
+</head>
+
+<body>
+    <div class="root">
         <header class="site-header">
             <div class="container">
-                <h1 class ="title">The Evolution of Static Web Design</h1>
-                <div class ="chu-thich">
-                    <span>Jane Doe</span>
+                <h1 class="title">The Evolution of Static Web Design</h1>
+                <div class="chu-thich">
+                    <span>Janeupscalemedia-transformed.jpeg Doe</span>
                     <span>October 24, 2023</span>
                     <span>4 min read</span>
                 </div>
-            </header>
-        
+        </header>
+    
         <main class="site-main container">
+            <!-- <section class="banner" id="banner-image">
+                <img src="./banner.jpeg" alt="Ảnh nền bài viết"/>
+            </section>
+
+            <section class="banner2" id="banner-image2">
+                
+            </section> -->
+
+            <section class="banner3" id="banner-image3">
+                
+            </section>
+
             <section id="noi-dung1" class="noi-dung">
-                <p> 
-                    In the early days of the World Wide Web, the concept of web 
-                    design was inextricably linked to the limitations of HTML. 
-                    Pages were static, serving primarily as digital documents 
-                    rather than the interactive applications we know today. This 
-                    era was defined by simplicity, where the focus was purely on 
-                    the dissemination of information without the complexities of modern 
+                <p>
+                    In the early days of the <a href="https://www.google.com" target="_blank" >World Wide Web</a>, the concept of web
+                    design was inextricably linked to the limitations of HTML.
+                    Pages were static, serving primarily as digital documents
+                    rather than the interactive applications we know today. This
+                    era was defined by simplicity, where the focus was purely on
+                    the dissemination of information without the complexities of modern
                     frameworks.
                 </p>
             </section>
-
+    
             <section id="noi-dung2" class="noi-dung">
-                <p>As technology advanced, so did our ability to style these documents. 
-                    Cascading Style Sheets (CSS) introduced a separation of content and 
-                    presentation, allowing designers to break free from the constraints of 
-                    table-based layouts. This shift not only improved accessibility but also 
-                    paved the way for the rich, visual storytelling that characterizes the 
-                    modern web. We moved from grey backgrounds and blue links to immersive 
+                <p>As technology advanced, so did our ability to style these documents.
+                    Cascading Style Sheets (CSS) introduced a separation of content and
+                    presentation, allowing designers to break free from the constraints of
+                    table-based layouts. This shift not only improved accessibility but also
+                    paved the way for the rich, visual storytelling that characterizes the
+                    modern web. We moved from grey backgrounds and blue links to immersive
                     digital experiences.
                 </p>
             </section>
-
-            <section id="noi-dung3" class="noi-dung">   
+    
+            <section id="noi-dung3" class="noi-dung">
                 <p>
-                    "Designers and developers are once again appreciating the speed, 
+                    "Designers and developers are once again appreciating the speed,
                     reliability, and accessibility of static content."
                 </p>
             </section>
-
+    
             <section id="noi-dung4" class="noi-dung">
-                <p> 
-                    However, with the rise of complex JavaScript frameworks and dynamic content, 
-                    there has been a noticeable return to minimalism. Designers and developers 
-                    are once again appreciating the speed, reliability, and accessibility of 
-                    static content. This back to basics' approach prioritizes typography, 
-                    whitespace, and readability over flashy animations. It reminds us that at 
+                <p>
+                    However, with the rise of complex JavaScript frameworks and dynamic content,
+                    there has been a noticeable return to minimalism. Designers and developers
+                    are once again appreciating the speed, reliability, and accessibility of
+                    static content. This back to basics' approach prioritizes typography,
+                    whitespace, and readability over flashy animations. It reminds us that at
                     its core, the web is about reading and connecting with ideas.
                 </p>
-            </section>   
+            </section>
+
+            <section class="social">
+                <div class="button-3d">
+                    <button type="button" id="facebook-button">
+                        <img src="./facebook.png" alt="Facebook" />
+                        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                    </button>
+                </div>
+            </section>
+    
+            <form id="form-information" class="form-information" action="https://www.google.com/search">
+                <h3>Please leave your information</h3>
+
+                <label for="q">Nhập từ khóa để tìm kiếm</label><br/>
+                <input name="q" type="text" placeholder="Nhập từ khóa để tìm kiếm" /><br/>
+
+                <label for="hoten">Họ tên</label><br/>
+                <input name="hoten" type="text" placeholder="Nhập họ tên" /><br/>
+
+                <label for="matkhau">Nhập mật khẩu</label><br/>
+                <input name="matkhau" type="password" placeholder="Nhập mật khẩu"/><br/>
+
+                <label for="linhvuc">Lĩnh vực</label><br/>
+                <input name="it" type="checkbox" value="IT"/> IT <br/>
+                <input name="fi" type="checkbox" value="FI"/> Finance <br/>
+                <input name="ma" type="checkbox" value="MA"/> Marketing <br/>
+
+                <label for="tren18tuoi">Bạn trên 18 tuổi không</label><br/>
+                <input name="tren18tuoi" type="radio" value="co"/> Có <br/>
+                <input name="tren18tuoi" type="radio" value="khong"/> Không <br/>
+
+                <label for="ngaysinh">Ngày sinh</label><br/>
+                <input name="ngaysinh" type="date" /><br/>
+
+                <label for="gioithieu">Giới thiệu về bản thân bạn</label><br/>
+                <textarea name="gioithieu" placeholder="Nhập giới thiệu về bản thân" cols="50" rows="20"></textarea><br/>
+
+
+                <label for="gioitinh">Giới tính</label><br/>
+                <select name="gioitinh">
+                    <option value="nam">Nam</option>
+                    <option value="nu">Nu</option>
+                </select><br/>
+
+                <button type="button"><a href="https://www.google.com" target="_blank">Đọc điều khoản</a></button>
+
+                <button type="submit">Xác nhận</button>
+            </form>
 
             <section id="noi-dung5" class="noi-dung">
                 <div class="divider"></div>
@@ -67,5 +129,8 @@
                     @2023HTML/CSS Practice. All rights reserved.
                 </p>
             </section>
-        </body>
-    </html>
+        </main>
+    </div>
+</body>
+
+</html>
