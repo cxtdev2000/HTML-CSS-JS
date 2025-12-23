@@ -24,7 +24,4 @@ và quan sát sự thay đổi của khối `.demo-box`.
 - Dùng thêm các thẻ semantic:
   - `header`, `nav`, `main`, `section`, `article`, `footer`
 - Thêm một đoạn mô tả có chứa từ khóa mà bạn muốn SEO (ví dụ: "Học HTML CSS cơ bản").
-
-
-
-
+- 

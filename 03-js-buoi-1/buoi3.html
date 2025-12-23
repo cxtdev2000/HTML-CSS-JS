@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content />
+    <title>Buổi 3 JS</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <main class="site-main">
+        <div class="maytinh-container-wrapper">
+            <div class="maytinh-display">
+                <input type="text" class="maytinh-input" id="maytinh-input" placeholder="0" />
+            </div>
+            <div class="maytinh-container-header">
+                <button class="maytinh-num maytinh-delete" id="maytinh-delete">Xóa</button>
+                <button class="maytinh-num maytinh-ac" id="maytinh-ac">AC</button>
+                <button class="maytinh-num maytinh-percent" id="maytinh-percent">%</button>
+                <button class="maytinh-num maytinh-operator" data-operator-name="/">÷</button>
+            </div>
+            <div class="maytinh-container">
+                <div class="maytinh-grid">
+                    <button class="maytinh-num maytinh-number" id="maytinh-num-1">1</button>
+                    <button class="maytinh-num maytinh-number" id="maytinh-num-2">2</button>
+                    <button class="maytinh-num maytinh-number" id="maytinh-num-3">3</button>
+                    <button class="maytinh-num maytinh-number" id="maytinh-num-4">4</button>
+                    <button class="maytinh-num maytinh-number" id="maytinh-num-5">5</button>
+                    <button class="maytinh-num maytinh-number" id="maytinh-num-6">6</button>
+                    <button class="maytinh-num maytinh-number" id="maytinh-num-7">7</button>
+                    <button class="maytinh-num maytinh-number" id="maytinh-num-8">8</button>
+                    <button class="maytinh-num maytinh-number" id="maytinh-num-9">9</button>
+                    <button class="maytinh-num" id="maytinh-alter-num-1">+/-</button>
+                    <button class="maytinh-num maytinh-number" id="maytinh-num-0">0</button>
+                    <button class="maytinh-num" id="maytinh-alter-num-2">,</button>
+                </div>
+                <div class="maytinh-calculator">
+                    <button class="maytinh-num maytinh-operator" data-operator-name="*">x</button>
+                    <button class="maytinh-num maytinh-operator" data-operator-name="-">-</button>
+                    <button class="maytinh-num maytinh-operator" data-operator-name="+">+</button>
+                    <button class="maytinh-num maytinh-operator" data-operator-name="=" id="maytinh-result-button">=</button>
+                </div>
+            </div>
+            <div class="message-container">
+                <p class="message-text" id="message-text">Không có lỗi</p>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>
