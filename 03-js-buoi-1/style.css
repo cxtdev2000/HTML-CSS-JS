@@ -252,24 +252,28 @@ body {
     text-decoration: underline;
 }
 
-.maytinh-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.maytinh-container {
+    display: flex;
+    flex-direction: row;
     gap: 10px;
+    justify-content: center;
+
 }
-.maytinh-calculator{
+
+.maytinh-calculator {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.maytinh-grid{
+
+.maytinh-grid {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(3, 1fr);
     color: white;
 }
 
-.maytinh-num{
+.maytinh-num {
     cursor: pointer;
     padding: 20px;
     font-size: 34px;
@@ -279,39 +283,39 @@ body {
     align-items: center;
 }
 
-.maytinh-operator{
+.maytinh-operator {
     background-color: #ffaa00;
     color: white;
 }
 
-.maytinh-container-wrapper{
+.maytinh-container-wrapper {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.maytinh-container-header{
+.maytinh-container-header {
     display: flex;
     gap: 10px;
 }
 
-.maytinh-delete{
+.maytinh-delete {
     background-color: #ff0000;
     color: white;
 }
 
-.maytinh-ac{
+.maytinh-ac {
     background-color: #00ff00;
     color: white;
 }
 
-.maytinh-percent{
+.maytinh-percent {
     background-color: #0000ff;
     color: white;
 }
 
-.maytinh-input{
-    width: 350px;
+.maytinh-input {
+    width: 450px;
     font-size: 48px;
     background-color: transparent;
     color: white;
@@ -319,4 +323,15 @@ body {
 
     border: none !important;
     outline: none !important;
+}
+
+.maytinh-left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message-text {
+    color: white;
+    font-size: 25px;
 }

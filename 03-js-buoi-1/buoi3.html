@@ -16,12 +16,19 @@
                 <input type="text" class="maytinh-input" id="maytinh-input" placeholder="0" />
             </div>
             <div class="maytinh-container-header">
+                <button class="maytinh-num maytinh-round-bracket" id="maytinh-round-bracket-left">(</button>
                 <button class="maytinh-num maytinh-delete" id="maytinh-delete">Xóa</button>
                 <button class="maytinh-num maytinh-ac" id="maytinh-ac">AC</button>
                 <button class="maytinh-num maytinh-percent" id="maytinh-percent">%</button>
                 <button class="maytinh-num maytinh-operator" data-operator-name="/">÷</button>
             </div>
             <div class="maytinh-container">
+                <div class="maytinh-left-column">
+                    <button class="maytinh-num maytinh-round-bracket" id="maytinh-round-bracket-right">)</button>
+                    <button class="maytinh-num maytinh-trigonometry" id="maytinh-sin">sin</button>
+                    <button class="maytinh-num maytinh-trigonometry" id="maytinh-cos">cos</button>                
+                    <button class="maytinh-num maytinh-trigonometry" id="maytinh-tan">tan</button>
+                </div>
                 <div class="maytinh-grid">
                     <button class="maytinh-num maytinh-number" id="maytinh-num-1">1</button>
                     <button class="maytinh-num maytinh-number" id="maytinh-num-2">2</button>
@@ -34,15 +41,16 @@
                     <button class="maytinh-num maytinh-number" id="maytinh-num-9">9</button>
                     <button class="maytinh-num" id="maytinh-alter-num-1">+/-</button>
                     <button class="maytinh-num maytinh-number" id="maytinh-num-0">0</button>
-                    <button class="maytinh-num" id="maytinh-alter-num-2">,</button>
+                    <button class="maytinh-num" id="maytinh-alter-num-2">.</button>
                 </div>
                 <div class="maytinh-calculator">
                     <button class="maytinh-num maytinh-operator" data-operator-name="*">x</button>
                     <button class="maytinh-num maytinh-operator" data-operator-name="-">-</button>
                     <button class="maytinh-num maytinh-operator" data-operator-name="+">+</button>
                     <button class="maytinh-num maytinh-operator" data-operator-name="=" id="maytinh-result-button">=</button>
-                </div>
+                </div>                
             </div>
+            
             <div class="message-container">
                 <p class="message-text" id="message-text">Không có lỗi</p>
             </div>
