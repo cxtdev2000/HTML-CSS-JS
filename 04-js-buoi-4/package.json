@@ -1,0 +1,15 @@
+{
+  "name": "04-buoi4",
+  "version": "1.0.0",
+  "description": "Bài học buổi 4",
+  "main": "buoi4.html",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open buoi4.html",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}
