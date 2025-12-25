@@ -1,0 +1,15 @@
+{
+  "name": "02-baitapbuoi2",
+  "version": "1.0.0",
+  "description": "Bài tập buổi 2",
+  "main": "google.html",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open google.html",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}
