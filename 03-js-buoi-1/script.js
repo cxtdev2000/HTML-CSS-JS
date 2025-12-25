@@ -98,6 +98,7 @@ mayTinhXoa.onclick = () => {
 mayTinhAc.onclick = () => {
   maytinhInput.value = "";
   disableOperator = false;
+  disablePercent = true;
 };
 
 // maytinhResultButton.onclick = () => {
@@ -137,6 +138,7 @@ mayTinhPercent.onclick = () => {
   if (disablePercent === false) {
     maytinhInput.value += mayTinhPercent.innerHTML;
   }
+  
 };
 
 for (let i = 0; i < maytinhRoundBrackets.length; i++) {
