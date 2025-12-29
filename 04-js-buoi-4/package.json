@@ -5,7 +5,7 @@
   "main": "buoi4.html",
   "type": "module",
   "scripts": {
-    "dev": "vite --open buoi4.html",
+    "dev": "vite --open baiTapBuoi4.html",
     "build": "vite build"
   },
   "dependencies": {
