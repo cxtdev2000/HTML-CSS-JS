@@ -96,7 +96,7 @@ const themToDoVaoHTML = (order, title, statusText, completedAt) => {
                             <div class="py-3 px-6 text-left w-[80%]">${statusText}</div>
                         </td>
                         <td>
-                            <div class="flex gap-4 py-3 px-15 text-center justify-center">
+                            <div class="flex gap-4 py-3 px-6 text-center w-[20%]">
                                 <button class="edit-button cursor-pointer rounded-md border border-[black] p-1 px-4 flex items-center bg-[white] hover:bg-gray-100" data-index="${
                                   order - 1
                                 }">Edit</button>
@@ -152,6 +152,21 @@ const dongBoDanhSachTodo = () => {
     const todo = danhSachHienThi[i];
     const statusText = dueMakeFunction(todo.deadline, todo.completedAt);
     themToDoVaoHTML(todo.id, todo.title, statusText, todo.completedAt);
+  }
+
+  const soDongConThieu = limit - danhSachHienThi.length;
+  if (soDongConThieu > 0) {
+    for (let j = 0; j < soDongConThieu; j++) {
+      const emptyRow = `
+              <tr class="h-[59px] border-b border-gray-300 even:bg-gray-100">
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+              </tr>`;
+      todoList.innerHTML += emptyRow;
+    }
   }
 
   renderPagination(danhSachDaLoc.length);
@@ -380,8 +395,15 @@ const ganSuKienChoNut = () => {
 };
 
 const xoaTodo = (id) => {
-  if (confirm("Bạn có chắc chắn muốn xóa Task này?")) {
+  if (confirm("Bạn có chắc chắn muốn xóa công việc này?")) {
+    if (idDangSua) {
+      document.getElementById("add-cancel").click();
+    }
     danhSachTodo = danhSachTodo.filter((item) => item.id !== id);
+    danhSachTodo.forEach((item, index) => {
+      item.id = index + 1;
+    });
+    soLuongTodo = danhSachTodo.length;
     capNhatDanhSachTodo();
     dongBoDanhSachTodo();
   }
@@ -486,8 +508,5 @@ searchInput.oninput = () => {
   currentPage = 1;
   dongBoDanhSachTodo();
 };
-
-
-
 
 dongBoDanhSachTodo();
