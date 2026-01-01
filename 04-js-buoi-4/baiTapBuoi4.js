@@ -158,7 +158,7 @@ const dongBoDanhSachTodo = () => {
   if (soDongConThieu > 0) {
     for (let j = 0; j < soDongConThieu; j++) {
       const emptyRow = `
-              <tr class="h-[59px] border-b border-gray-300 even:bg-gray-100">
+              <tr class="h-[58px] border-b border-gray-300 even:bg-gray-100">
                   <td>&nbsp;</td>
                   <td>&nbsp;</td>
                   <td>&nbsp;</td>
