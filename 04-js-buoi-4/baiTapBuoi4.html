@@ -10,125 +10,173 @@
     </head>
 
     <body>
-        <header class ="flex sticky top-0 z-10 bg-white justify-between items-center border-b-1 border-gray-200 px-10 h-18">
+        <header
+            class="flex sticky top-0 z-10 bg-white justify-between items-center border-b-1 border-gray-200 px-10 h-18">
             <div class="flex gap-10">
-                <button id ="button-task-master" class="text-2xl font-bold">TaskMaster</button>
-                <button id ="button-dashboard" class ="hover:text-blue-400">Dashboard</button>
-                <button id ="button-my-tasks" class =" hover:text-blue-400">My Tasks</button>
-                <button id ="button-calender" class =" hover:text-blue-400">Calender</button>
-                <button id ="button-settings" class =" hover:text-blue-400">Settings</button>
+                <button id="button-task-master"
+                    class="text-2xl font-bold">TaskMaster</button>
+                <button id="button-dashboard"
+                    class="hover:text-blue-400">Dashboard</button>
+                <button id="button-my-tasks" class=" hover:text-blue-400">My
+                    Tasks</button>
+                <button id="button-calender"
+                    class=" hover:text-blue-400">Calender</button>
+                <button id="button-settings"
+                    class=" hover:text-blue-400">Settings</button>
             </div>
             <div>
-                <input id="search-task" class="border border-[black] p-2" type="text" placeholder="Search Task ..." /> 
+                <input id="search-task" class="border border-[black] p-2"
+                    type="text" placeholder="Search Task ..." />
             </div>
         </header>
-        <main class = "bg-gray-100 h-198">
+        <main class="bg-gray-100 h-198">
 
-            <div id="add-task" class = "flex justify-between max-w-7xl mx-auto py-5 h-40 ">
+            <div id="add-task"
+                class="flex justify-between max-w-7xl mx-auto py-5 h-40 ">
                 <div class="flex flex-col">
-                    <p class ="text-5xl font-medium">To-Do List</p>
-                    <p class ="text-blue-400">Track your progress and manage daily priorities</p>
+                    <p class="text-5xl font-medium">To-Do List</p>
+                    <p class="text-blue-400">Track your progress and manage
+                        daily priorities</p>
                 </div>
-                <div class=" flex flex-col items-end" >
-                    <button type="button" id="add-button" class =" bg-blue-500 hover:bg-blue-400  text-white rounded-xl cursor-pointer w-30 h-10">+ New Task</button>
-                    <div id="add-form" class="p-2 mt-2 border hidden rounded-xl">
-                        <form >
-                            <input class="border border-[black] rounded-xl p-2 " type="text" id="add-input" placeholder="Add a new todo" />
-                            <input type="date" id="add-date" class="border border-[black] rounded-xl p-2 " />
-                            <button type="button" id="add-submit" class="bg-green-300 hover:bg-green-500 cursor-pointer rounded-xl p-2 w-24">Add todo</button>
-                            <button type="button" id="add-cancel" class="bg-red-300 hover:bg-red-500 cursor-pointer rounded-xl p-2 w-24">Cancel</button>
+                <div class=" flex flex-col items-end">
+                    <button type="button" id="add-button"
+                        class=" bg-blue-500 hover:bg-blue-400  text-white rounded-xl cursor-pointer w-30 h-10">+
+                        New Task</button>
+                    <div id="add-form"
+                        class="p-2 mt-2 border hidden rounded-xl">
+                        <form>
+                            <input class="border border-[black] rounded-xl p-2 "
+                                type="text" id="add-input"
+                                placeholder="Add a new todo" />
+                            <input type="date" id="add-date"
+                                class="border border-[black] rounded-xl p-2 " />
+                            <button type="button" id="add-submit"
+                                class="bg-green-300 hover:bg-green-500 cursor-pointer rounded-xl p-2 w-24">Add
+                                todo</button>
+                            <button type="button" id="add-cancel"
+                                class="bg-red-300 hover:bg-red-500 cursor-pointer rounded-xl p-2 w-24">Cancel</button>
                         </form>
                     </div>
                 </div>
             </div>
-            <div id="status" class="flex justify-between gap-4 max-w-7xl mx-auto py-5 border-t border-gray-200">
-                <div class="bg-white flex flex-col justify-center items-center border border-gray-200 rounded-lg h-24 w-full shadow-sm">
+            <div id="status"
+                class="flex justify-between gap-4 max-w-7xl mx-auto py-5 border-t border-gray-200">
+                <div
+                    class="bg-white flex flex-col justify-center items-center border border-gray-200 rounded-lg h-24 w-full shadow-sm">
                     <p class="text-gray-500 text-sm">Total Tasks</p>
                     <p class="text-3xl font-bold" id="stat-total">0</p>
                 </div>
 
-                <div class="bg-white flex flex-col justify-center items-center border border-gray-200 rounded-lg h-24 w-full shadow-sm">
+                <div
+                    class="bg-white flex flex-col justify-center items-center border border-gray-200 rounded-lg h-24 w-full shadow-sm">
                     <p class="text-gray-500 text-sm">In Progress</p>
                     <p class="text-3xl font-bold" id="stat-inprogress">0</p>
                 </div>
 
-                <div class="bg-white flex flex-col justify-center items-center border border-gray-200 rounded-lg h-24 w-full shadow-sm">
+                <div
+                    class="bg-white flex flex-col justify-center items-center border border-gray-200 rounded-lg h-24 w-full shadow-sm">
                     <p class="text-gray-500 text-sm">Completed</p>
                     <p class="text-3xl font-bold" id="stat-completed">0</p>
                 </div>
             </div>
 
-            <div class = "bg-white flex flex-col max-w-7xl m-auto border border-gray-200 rounded-md p min-h-120 "> 
-                <div class="flex justify-start items-center pl-10 border-b-1 border-gray-300">
+            <div
+                class="bg-white flex flex-col max-w-7xl m-auto border border-gray-200 rounded-md p min-h-120 ">
+                <div
+                    class="flex justify-start items-center pl-10 border-b-1 border-gray-300">
                     <p>Filter by:</p>
                     <div class="dropdown relative inline-block text-left m-4">
-                        <button onclick="toggleDropdown()" id="filter-btn" class="dropbtn text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center cursor-pointer">
+                        <button onclick="toggleDropdown()" id="filter-btn"
+                            class="dropbtn text-gray-700 font-semibold py-2 px-4 rounded inline-flex items-center cursor-pointer">
                             <span>Tất cả</span>
-                            <svg class="fill-current h-4 w-4 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                            <svg class="fill-current h-4 w-4 ml-2"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 20 20"><path
+                                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
                         </button>
-                        <div id="myDropdown" class="dropdown-content hidden absolute left-0 mt-2 w-40 bg-white border border-gray-200 rounded-md shadow-lg z-10">
+                        <div id="myDropdown"
+                            class="dropdown-content hidden absolute left-0 mt-2 w-40 bg-white border border-gray-200 rounded-md shadow-lg z-10">
                             <div class="py-1">
-                                <a href="#" onclick="thayDoiBoLoc('all')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Tất cả</a>
-                                <a href="#" onclick="thayDoiBoLoc('active')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Đang thực hiện</a>
-                                <a href="#" onclick="thayDoiBoLoc('completed')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Đã hoàn thành</a>
-                                <a href="#" onclick="thayDoiBoLoc('notlate')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Chưa tới hạn</a>
-                                <a href="#" onclick="thayDoiBoLoc('late')" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Quá hạn</a>
+                                <a href="#" onclick="thayDoiBoLoc('all')"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Tất
+                                    cả</a>
+                                <a href="#" onclick="thayDoiBoLoc('active')"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Đang
+                                    thực hiện</a>
+                                <a href="#" onclick="thayDoiBoLoc('completed')"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Đã
+                                    hoàn thành</a>
+                                <a href="#" onclick="thayDoiBoLoc('notlate')"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Chưa
+                                    tới hạn</a>
+                                <a href="#" onclick="thayDoiBoLoc('late')"
+                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Quá
+                                    hạn</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <table class="table-fixed w-full">
-                    <thead class="bg-gray-100 text-gray-600 font-bold uppercase text-sm leading-normal ">
+                    <thead
+                        class="bg-gray-100 text-gray-600 font-bold uppercase text-sm leading-normal ">
                         <tr class="border-b border-gray-300">
                             <th class="py-3 px-2 text-center w-[5%]">
-                                <div class="flex items-center justify-center">#</div>
+                                <div
+                                    class="flex items-center justify-center">#</div>
                             </th>
                             <th class="py-3 px-2 text-center w-[10%]">
-                                <div class="flex items-center justify-center">Status</div>
+                                <div
+                                    class="flex items-center justify-center">Status</div>
                             </th>
                             <th class="py-3 px-6 text-left w-[35%]">
-                                <div class="flex items-center whitespace-nowrap">Task Title</div>
+                                <div
+                                    class="flex items-center whitespace-nowrap">Task
+                                    Title</div>
                             </th>
                             <th class="py-3 px-6 text-left w-[30%]">
-                                <div class="flex items-center whitespace-nowrap">Due / Completed</div>
+                                <div
+                                    class="flex items-center whitespace-nowrap">Due
+                                    / Completed</div>
                             </th>
                             <th class="py-3 px-6 text-center w-[20%]">
-                                <div class="flex items-center justify-center">Action</div>
+                                <div
+                                    class="flex items-center justify-center">Action</div>
                             </th>
                         </tr>
                     </thead>
                     <tbody id="todo-list"></tbody>
                 </table>
-                <div class="flex justify-between items-center mt-auto px-6 py-4 border-t border-gray-200 bg-gray-50 rounded-b-md">
-                    <span id="pagination-info" class="text-sm text-gray-700">Showing 
-                        <span class="font-semibold text-gray-900">1</span> to 
-                        <span class="font-semibold text-gray-900">5</span> of 
+                <div
+                    class="flex justify-between items-center mt-auto px-6 py-4 border-t border-gray-200 bg-gray-50 rounded-b-md">
+                    <span id="pagination-info"
+                        class="text-sm text-gray-700">Showing
+                        <span class="font-semibold text-gray-900">1</span> to
+                        <span class="font-semibold text-gray-900">5</span> of
                     </span>
-                    <div id="pagination-container" class="flex gap-1 items-center">
+                    <div id="pagination-container"
+                        class="flex gap-1 items-center">
 
                     </div>
                 </div>
             </div>
-            
+
         </main>
-        
-        <footer class ="flex justify-between mx-20">
+
+        <footer class="flex justify-between mx-20">
             <div class="flex gap-4  items-center">
                 <p>TaskMaster</p>
             </div>
-            <div class ="flex gap-4  items-center  ">
-                <button class =" hover:text-blue-400">Privacy Policy</p>
-                <button class =" hover:text-blue-400">Terms of Service</p>
-                <button class =" hover:text-blue-400">Help Center</p>
+            <div class="flex gap-4  items-center  ">
+                <button class=" hover:text-blue-400">Privacy Policy</button>
+                <button class=" hover:text-blue-400">Terms of Service</button>
+                <button class=" hover:text-blue-400">Help Center</button>
             </div>
             <div class="flex items-center rounded-lg h-20 w-50">
                 <p>@ 2023 TaskMaster Inc.</p>
-            </div>            
+            </div>
         </footer>
 
-            
-        </main>
         <script src="./baiTapBuoi4.js"></script>
     </body>
 
